@@ -1,5 +1,7 @@
 # Arduino Sensorless BLDC Motor Controller (ESC)
 
+![Schematic Overview](./Schematic.png)
+
 This project implements a **sensorless BLDC (Brushless DC) motor controller (ESC)** using an Arduino UNO. It drives a three-phase motor with MOSFET half-bridges (using IR2101 drivers), enabling adjustable speed control without Hall sensors—using back-EMF zero-crossing detection for commutation.
 
 ## Features
@@ -13,7 +15,7 @@ This project implements a **sensorless BLDC (Brushless DC) motor controller (ESC
 
 ## Schematic
 
-See `Screenshot-2025-08-21-193358.jpg` or load the provided Proteus files to examine the full ESC hardware:  
+See `Schematic.png` or load the provided Proteus files to examine the full ESC hardware:  
 - Arduino UNO generates logic signals for all three phases.
 - IR2101 MOSFET drivers for high/low-side switching.
 - Three-phase BLDC motor, motor voltage supply, integrated pushbuttons for user speed control.
